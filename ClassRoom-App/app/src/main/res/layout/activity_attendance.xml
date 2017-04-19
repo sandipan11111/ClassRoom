@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Attendance"
+    android:background="@drawable/backg7">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/classesattendedid"
+        android:layout_toRightOf="@+id/classesattendedid"
+        android:layout_toEndOf="@+id/classesattendedid"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/canoid"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/tcnoid"
+        android:layout_alignBaseline="@+id/totalclassesid"
+        android:layout_alignBottom="@+id/totalclassesid"
+        android:layout_alignLeft="@+id/canoid"
+        android:layout_alignStart="@+id/canoid"
+        android:text="0"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/attendanceid"
+        android:layout_alignLeft="@+id/tcnoid"
+        android:layout_alignStart="@+id/tcnoid"
+        android:id="@+id/anoid"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/enterclassesleftid"
+        android:id="@+id/eclnoid"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_width="50dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignLeft="@+id/anoid"
+        android:layout_alignStart="@+id/anoid" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/classesyoucanleaveid"
+        android:layout_alignLeft="@+id/eclnoid"
+        android:layout_alignStart="@+id/eclnoid"
+        android:id="@+id/cyclnoid"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/presentbuttonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@android:color/background_light"
+        android:onClick="getpres"
+        android:text="Present"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/absentbuttonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cyclnoid"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/cyclnoid"
+        android:background="@android:color/background_light"
+        android:onClick="getabs"
+        android:text="Absent"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="Teacher's Name"
+        android:id="@+id/teachernameid"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/subjectid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Subject"
+        android:id="@+id/subjectid"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="Attendance (%) :"
+        android:ems="10"
+        android:id="@+id/attendanceid"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="Enter Classes Left :"
+        android:ems="10"
+        android:id="@+id/enterclassesleftid"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/attendanceid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="Classes you can leave :"
+        android:ems="10"
+        android:id="@+id/classesyoucanleaveid"
+        android:layout_width="wrap_content"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/enterclassesleftid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="Total Classes :"
+        android:ems="10"
+        android:id="@+id/totalclassesid"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/attendanceid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:text="Classes Attended :"
+        android:ems="10"
+        android:id="@+id/classesattendedid"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_above="@+id/totalclassesid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/eclnoid"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/eclnoid"
+        android:layout_toRightOf="@+id/eclnoid"
+        android:background="@drawable/tick"
+        android:onClick="getcalc" />
+
+</RelativeLayout>

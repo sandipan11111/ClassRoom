@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "601651278366",
+    "firebase_url": "https://classroom-b94d0.firebaseio.com",
+    "project_id": "classroom-b94d0",
+    "storage_bucket": "classroom-b94d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601651278366:android:60092d1b8e5d8952",
+        "android_client_info": {
+          "package_name": "com.sandipan.classroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601651278366-jjplr0a7eiie2m0aumgkr115cd7atb92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sandipan.classroom",
+            "certificate_hash": "8f1ac8e6e664d5a9e21506ff6529b1c9e3861dd0"
+          }
+        },
+        {
+          "client_id": "601651278366-e9ma3o064ghfkdc6io6rk11m8pp3m9qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJXMYpgYdpTdguI0RuHBqPhtvIVowkr7Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601651278366-e9ma3o064ghfkdc6io6rk11m8pp3m9qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006400"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/black"
+        android:textSize="20sp"
+        android:layout_above="@+id/editTextEmail"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        android:hint="Enter email"
+        android:layout_above="@+id/buttonRegister"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPressedHighlight"
+        android:text="Register Device"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textColorLink="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="112dp" />
+
+    <TextView
+        android:text="Classroom"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:typeface="sans"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp"
+        android:layout_height="60dp" />
+
+
+</RelativeLayout>

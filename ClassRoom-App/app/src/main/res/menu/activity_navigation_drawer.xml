@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profileid"
+            android:icon="@drawable/ima"
+            android:title="Profile" />
+        <item
+            android:id="@+id/addsubid"
+            android:icon="@drawable/ima"
+            android:title="Add Subjects" />
+        <item
+            android:id="@+id/viewsubid"
+            android:icon="@drawable/ima"
+            android:title="View Subjects" />
+        <item
+            android:id="@+id/statusid"
+            android:icon="@drawable/ima"
+            android:title="Status" />
+
+
+    </group>
+
+    <item android:title="Emergency Numbers">
+        <menu>
+            <item
+                android:id="@+id/contactid"
+                android:icon="@drawable/ima"
+                android:title="Contact Info" />
+
+        </menu>
+    </item>
+
+</menu>
+
